@@ -47,7 +47,7 @@ export default function CoursesScreen() {
     },
     {
       id: '5',
-      title: 'Pet Fiest Aid',
+      title: 'Pet First Aid',
       price: 'R750',
       duration: '6 Weeks',
       image: require('../../assets/images/tabIcons/Pet_FirstAid.jpg'),
