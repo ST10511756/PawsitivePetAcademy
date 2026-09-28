@@ -41,21 +41,21 @@ const COURSES_DATA: Record<
     title: 'Pet Business Management',
     price: 'Price: R1500',
     duration: 'Duration: 6 Months',
-    overview: 'Learn to understand common pet behaviours and improve communication skills.',
+    overview: 'Learn how master the essentials of running a successful pet care business.',
     image: require('../../../assets/images/tabIcons/Pet_Business.jpg'),
   },
   '5': {
     title: 'Pet First Aid',
     price: 'Price: R750',
     duration: 'Duration: 6 Weeks',
-    overview: 'Learn to understand common pet behaviours and improve communication skills.',
+    overview: 'Learn vital emergency response techniques for your pets.',
     image: require('../../../assets/images/tabIcons/Pet_FirstAid.jpg'),
   },
   '6': {
     title: 'Basic Dog Walking',
     price: 'Price: R750',
     duration: 'Duration: 6 Weeks',
-    overview: 'Learn to understand common pet behaviours and improve communication skills.',
+    overview: 'Learn how understand leash handling, safety protocols, and body language for walks.',
     image: require('../../../assets/images/tabIcons/Dog_Walking.jpg'),
   },
   '7': {
@@ -72,7 +72,7 @@ export default function CourseDetailsScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const [menuVisible, setMenuVisible] = useState(false);
 
-  // Fallback to item '1' if id is missing or invalid
+  // Fallback to id 1 if id is missing or invalid
   const course = COURSES_DATA[id || '1'] || COURSES_DATA['1'];
 
   return (
